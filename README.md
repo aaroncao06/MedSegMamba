@@ -6,6 +6,6 @@ MedSegMamba_recon_aseg_hsf is the inference script for running on just one scan.
 
 MedSegMamba_recon_aseg_hsf_batch runs MedSegMamba_recon_aseg_hsf on each .mgz or .nii.gz file in a folder and saves the outputs to other folders.
 
-conform.py and arg_types.py come from the FastSurfer project.
+conform.py and arg_types.py come from the FastSurfer repository: https://github.com/Deep-MI/FastSurfer
 
 Model weights are available to download here: https://drive.google.com/drive/folders/1LFHNZqWiZJIwuUXZZsOQkuUCrNpzHIta?usp=sharing
