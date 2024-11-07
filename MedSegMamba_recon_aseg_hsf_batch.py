@@ -21,7 +21,16 @@ parser.add_argument('--output_t1_dir', default=None, type=str)
 parser.add_argument('--output_aseg_dir', default=None, type=str)
 parser.add_argument('--output_hsf_dir', default=None, type=str) 
 
-parser.add_argument('--no_conform', default=True, type=bool)
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+parser.add_argument('--no_conform', default=True, type=str2bool)
 
 parser.add_argument('--aseg_model_path', default='', type=str)
 parser.add_argument('--hsf_model_path', default='', type=str)
