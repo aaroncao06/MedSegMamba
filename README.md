@@ -10,4 +10,6 @@ conform.py and arg_types.py come from the FastSurfer repository: https://github.
 
 Model weights are available to download here: https://drive.google.com/drive/folders/1LFHNZqWiZJIwuUXZZsOQkuUCrNpzHIta?usp=sharing. It was trained on 1 mm isotropic resolution T1w MRI images preprocessed with FreeSurfer skull-stripping and intensity normalization.
 
-The FreeSurfer preprocessing script can be run with the following command: bash run_parallel.sh /path/to/input_dir /path/to/base_dir num_jobs Step1_FS_autorecon1_run.sh
+The FreeSurfer preprocessing script can be run with the following command: 
+
+bash Step1_FS_autorecon1_run.sh /path/to/input_dir /path/to/base_dir num_jobs Step1_FS_autorecon1.sh
